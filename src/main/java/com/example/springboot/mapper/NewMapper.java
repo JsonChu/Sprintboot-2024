@@ -2,8 +2,11 @@ package com.example.springboot.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.springboot.bean.New;
 import com.example.springboot.bean.Old;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -13,6 +16,5 @@ import java.util.Map;
  */
 @Repository
 public interface NewMapper extends BaseMapper<New> {
-    Map<String,Object> selectCmsById(Long id);
 
 }

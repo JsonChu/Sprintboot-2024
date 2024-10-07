@@ -9,4 +9,5 @@ import com.example.springboot.bean.Old;
  * @usage
  */
 public interface OldService extends IService<Old> {
+
 }
